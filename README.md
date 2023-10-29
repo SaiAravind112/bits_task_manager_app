@@ -1,7 +1,9 @@
 # Assignment: Flutter App with Back4App Integration
 
-## Introduction
+## Demo
+[![Flutter App with Back4App Integration](https://img.youtube.com/vi/cIqlZuGP8hM/0.jpg)](https://www.youtube.com/watch?v=cIqlZuGP8hM "Flutter App with Back4App Integration Demo")
 
+## Introduction
 ### Assignment Description:
 - In this assignment, We will create a Flutter app that connects to Back4App, a Backend-as-a-Service (BaaS) platform, to manage tasks.
 - We will be creating for 
@@ -101,6 +103,8 @@ Creating a Flutter app that connects to Back4App to manage tasks is a comprehens
 - Create a new Back4App app named `**BITS Task Manager**`.
     + I have selected `**NoSQL**` Database for this, We can select any thing.
 - In Back4App, create a class named `**Task**` with columns `**title**` (String) and `**description**` (String).
+- Added additional fields such as `**dueDate**` (String) and `**category**`
+![Back4App](demo/back4app.png "Back4App Structure")
 
 ### **Step 2: Flutter Setup**
 
@@ -153,18 +157,21 @@ Creating a Flutter app that connects to Back4App to manage tasks is a comprehens
 - Created a screen in the Flutter app to display a list of tasks. I used a `ListView` or any other widget that suits your design.
 - Implemented a function to fetch tasks from Back4App using the Parse SDK. This function should query the "Task" class and retrieve the tasks.
 - Display the tasks in the list view with titles and descriptions.
+![Task List Page](demo/task-list.png "Task List Page (Home)")
 
 ### **Step 4: Task Creation**
 
 - Created a screen for adding new tasks. We can use a `TextFormField` to input the title and description.
 - Implemented functionality to create and save tasks to Back4App using the Parse SDK. This involves creating a new instance of the "Task" class and saving it to the database.
 - After a new task is created, verify that it appears in the task list by calling the fetch function and refreshing the UI.
+![Create a new Task Page](demo/add-new-task.png "Task Creation Page")
 
 ### **Step 5: Task Details and Edit Page**
 
 - Added a feature to view task details when a task is tapped in the task list. 
 - We can navigate to a new screen and Edit the Details like or use a dialog to display the title and description of the selected task.
 - After the task is edited, verify that it appears in the task list by calling the fetch function and refreshing the UI.
+![Task Edit Page](demo/edit-task.png "Task Edit Page")
 
 ### **Step 6: Bonus Features**
 
